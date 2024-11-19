@@ -27,7 +27,7 @@ def login():
     attempts = 3
     while attempts > 0:
         username = input(f"{BLUE}Username: {RESET}").strip().upper()
-        password = get_password(f"{BLUE}Password: {RESET}")
+        password = getpass.getpass(f"{BLUE}Password: {RESET}")
         
         if authenticate_user(username, password):
             print(f"{Fore.GREEN}Login successful!")

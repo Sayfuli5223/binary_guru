@@ -5,7 +5,7 @@ import pytz
 import requests
 import mysql.connector
 from colorama import Fore, Style, init
-import msvcrt  # Windows-specific module to handle password input
+import getpass
 
 # Initialize colorama for colored output
 init(autoreset=True)
